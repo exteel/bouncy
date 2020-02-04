@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="header__inner">
+    <div class="row">
+      <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+        <div class="logo">
+          <a class="glitch" data-text="BOUNCY" href="#first__screen">bouncy</a>
+        </div>
+      </div>
+
+      <div class="col-xl-10 col-lg-10 col-md-9 col-sm-8">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a class="nav__item" href="#hello">Hello</a></li>
+            <li><a class="nav__item" href="#about">About</a></li>
+            <li><a class="nav__item" href="#services">Services</a></li>
+            <li><a class="nav__item" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav__item" href="#team">Team</a></li>
+            <li><a class="nav__item" href="#blog">Blog</a></li>
+            <li><a class="nav__item" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $(".header").addClass("fixed");
+    } else {
+      $(".header").removeClass("fixed");
+    }
+  });
+</script>

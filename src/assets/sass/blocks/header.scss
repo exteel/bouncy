@@ -1,0 +1,27 @@
+.header {
+  transition: 1s;
+  position: absolute;
+  width: 100%;
+  z-index: 22;
+
+  top: 0px;
+}
+
+.header__inner {
+  width: 100%;
+  padding: 20px 70px;
+
+  @media (max-width: $screen-lg-max) {
+    padding: 20px 10px;
+  }
+}
+
+.container-fluid {
+  margin: 0;
+}
+
+.header.fixed {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 1);
+}

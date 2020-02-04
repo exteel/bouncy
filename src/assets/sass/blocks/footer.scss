@@ -1,0 +1,42 @@
+.footer {
+    background: $light-gray;
+    padding: 5rem;
+}
+
+.company__name {
+    text-transform: uppercase;
+    color: $black;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 0.1rem;
+    padding: 1.3rem;
+}
+
+.company__description {
+    color: gray;
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+
+.footer__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    text-align: center;
+}
+
+.company__social>img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.company__social>img:last-child {
+    margin-right: 0;
+}

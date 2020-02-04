@@ -1,0 +1,35 @@
+.our__services--main {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  @media (max-width: $screen-sm-max) {
+        overflow: hidden;
+  }
+
+  
+
+  
+}
+
+
+
+.about--icons {
+  display: flex;
+  flex-basis: 5%;
+
+  @media (max-width: $screen-sm-max) {
+        flex-direction: row;
+        margin-bottom: 2rem;
+  }
+}
+
+
+
+
+.about--centered--gray {
+  background: #f3f3f3;
+}

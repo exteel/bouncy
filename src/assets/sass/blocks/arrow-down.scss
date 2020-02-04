@@ -1,0 +1,78 @@
+.arrow--down {
+    text-align: center;
+}
+
+.arrow-wave {
+
+    z-index: 11;
+  
+    display: block;
+    position: absolute;
+    bottom: 7%;
+    right: 50%;
+
+
+
+    cursor: pointer;
+    margin-top: 100px;
+    font-size: 0;
+
+  
+  
+  }
+  
+  .arrow-wave span {
+    display: block;
+    position: relative;
+    height: 1.2rem;
+    width: 1.6rem;
+  
+    opacity: 0.2;
+  }
+  
+  .arrow-wave span::before,
+  .arrow-wave span::after {
+    display: block;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 1.2rem;
+    background-color: $white;
+  }
+  
+  .arrow-wave span::before {
+    top: -2px;
+    left: 0;
+    transform-origin: left center;
+    transform: rotate(45deg);
+  }
+  
+  .arrow-wave span::after {
+    top: -2px;
+    right: 0;
+    transform-origin: right center;
+    transform: rotate(-45deg);
+  }
+  
+  .arrow-wave span:nth-child(1n) {
+    animation: animate-arrow-wave 2s infinite;
+    animation-delay: .25s;
+  }
+  .arrow-wave span:nth-child(2n) {
+    animation: animate-arrow-wave 2s infinite;
+    animation-delay: .50s;
+  }
+  
+  .arrow-wave span:nth-child(3n) {
+    animation: animate-arrow-wave 2s infinite;
+    animation-delay: .75s;
+  }
+  
+  @keyframes animate-arrow-wave {
+    0%   { opacity: 0.2; }
+    25%  { opacity: 0.2; }
+    50%  { opacity: 0.2; }
+    75%  { opacity: 1.0; }
+    100% { opacity: 0.2; }
+  }
+  

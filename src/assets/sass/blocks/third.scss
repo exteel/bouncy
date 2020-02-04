@@ -1,0 +1,42 @@
+.about__details {
+  background: $light-gray;
+}
+
+.about--centered {
+  text-align: center;
+}
+
+.about--centered {
+  padding: 7rem 0 3rem 0;
+}
+
+.about__infobox {
+  
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  text-align: left;
+}
+
+.about__part {
+  padding: 0 5rem;
+  flex-basis: 35%;
+  min-width: 600px;
+  word-break: unset;
+  
+  @media (max-width: $screen-sm-max) {
+        font-size: 85%;
+  }
+
+  
+  
+}
+
+//
+* {
+  box-sizing: border-box;
+}
+

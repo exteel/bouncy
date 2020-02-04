@@ -1,0 +1,246 @@
+.team__slider {
+  width: 100%;
+  background: $white;
+  padding-bottom: 5rem;
+}
+
+.info--slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  max-width: 100%;
+  flex-basis: 23%;
+
+  
+}
+
+.tripple-slider {
+  
+  position: relative;
+  min-height: 370px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  color: $gray;
+  margin: 2rem 1rem;
+
+  @media (max-width: $screen-sm-max) {
+    flex-wrap: wrap;
+  }
+}
+
+.title--slider {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.sub-title--slider {
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: right;
+  padding-bottom: 1rem;
+}
+
+.description--slider {
+  text-align: right;
+}
+
+.img--slider {
+  max-width: 50%;
+  padding: 2rem 0;
+  max-height: 100%;
+  object-fit: cover;
+  height: 100%;
+  
+}
+
+// Team Progress bar
+
+.progress--slider {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.skills-bar-container {
+  position: relative;
+  width: 40%;
+  min-width: 300px;
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+
+    .progressbar-title {
+      color: $gray;
+
+      h3 {
+        display: inline-block;
+      }
+      .percent {
+        position: absolute;
+        right: 5px;
+        bottom: 20px;
+      }
+    } // end progressbar-title
+
+    .bar-container {
+      background: $gray;
+      position: relative;
+      width: 100%;
+      height: 5px;
+      margin-top: 5px;
+      display: block;
+      @include border-radius(5px);
+
+      .progressbar {
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        @include border-radius(5px);
+
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      #progress-html {
+        -webkit-animation-name: progress-html;
+        animation-name: progress-html;
+        -webkit-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+      }
+
+      #progress-css {
+        -webkit-animation-name: progress-css;
+        animation-name: progress-css;
+        -webkit-animation-delay: 0.7s * 2;
+        animation-delay: 0.7s * 2;
+      }
+
+      #progress-javascript {
+        -webkit-animation-name: progress-javascript;
+        animation-name: progress-javascript;
+        -webkit-animation-delay: 0.7s * 3;
+        animation-delay: 0.7s * 3;
+      }
+    } // end bar-container
+  }
+}
+
+.progressgreen {
+  background-color: $green;
+}
+
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+.black--block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../assets/img/black-block.jpg");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  color: $white;
+  padding: 4rem 10rem;
+
+  @media (max-width: $screen-sm-max) {
+    padding: 2rem 5rem;
+  }
+}
+
+.black--block--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

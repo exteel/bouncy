@@ -1,0 +1,72 @@
+
+  .team__quotes {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-image: url('../../assets/img/layer4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    padding: 2rem 0;
+
+    @media (max-width: $screen-md-max) {
+      justify-content: center;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.3);
+      z-index: 2;
+    }
+  }
+  
+  .team__about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 30%;
+    color: $gray;
+
+    @media (max-width: $screen-md-max) {
+      flex-basis: 60%;
+    }
+
+  }
+  
+  .imac {
+    margin-top: -8%;
+
+
+    @media (max-width: $screen-md-max) {
+      display: none;
+    }
+    
+  }
+  
+  
+  .green {
+    color: #19BD9A;
+  }
+  
+  .team__title, .author, .position {
+    text-transform: uppercase;
+  } 
+  
+  .team__title {
+    font-weight: 100;
+    color: $white;
+    letter-spacing: .3rem;
+  }
+  
+  .author {
+    font-weight: bold;
+  }
+  
+
+  

@@ -1,0 +1,66 @@
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding-left: 30px;
+  height: 100%;
+
+  & a {
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 0.1rem;
+
+    @media (max-width: $screen-lg-max) {
+        font-size: 1.5rem;
+    }
+  }
+
+  
+}
+
+
+@keyframes noise-anim{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:after{
+  content:attr(data-text);
+  position:absolute;
+  left:48px;
+  text-shadow:-1px 0 red;
+  top:5px;
+  color:white;
+  background:transparent;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2{
+  $steps:20;
+  @for $i from 0 through $steps{
+    #{percentage($i*(1/$steps))}{
+      clip:rect(random(100)+px,9999px,random(100)+px,0);
+    }
+  }
+}
+.glitch:before{
+  content:attr(data-text);
+  position:absolute;
+  left:42px;
+  text-shadow:1px 0 blue; 
+  top:5px;
+  color:white;
+  background:transparent;
+  overflow:hidden;
+  clip:rect(0,900px,0,0); 
+  animation:noise-anim-2 3s infinite linear alternate-reverse;
+}

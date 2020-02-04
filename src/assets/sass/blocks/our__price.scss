@@ -1,0 +1,143 @@
+.our__price {
+    background-color: $light-gray;
+    width: 100%;
+}
+.price__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 200px;
+    
+}
+
+
+
+.price__card {
+    background: $white;
+    margin-right: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 5rem;
+    margin-bottom: 4.5rem;
+   
+    
+    @media (max-width: $screen-lg-max) {
+        margin-left: 4.5rem;
+      }
+    
+    
+
+    &:hover {
+
+        padding: 0;
+        cursor: pointer;
+
+        .price__card__title {
+            top: 100%;
+            transition: .7s;
+            font-weight: 100;
+            text-transform: none;
+            font-size: 1rem;
+        }
+
+        .price__card__amount, .price__card__time {
+            display: none;
+        }
+
+        .price__card__list ul {
+            display: block;
+            padding: 3.75rem;
+            
+        }
+        
+
+        .price__card__premium:after {
+            content: 'Lets Start >';
+        }
+
+        .price__card__standart:after {
+            content: 'Lets Start >';
+        }
+
+        .price__card__exclusive:after {
+            content: 'Lets Start >';
+        }
+
+    }
+    
+}
+
+
+.price__card__title {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.3rem;
+    background-color: $green;
+    padding: 1.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    font-weight: bold;
+    width: 100%;
+}
+
+.price__card__premium:after {
+    content: 'premium';
+    
+}
+
+.price__card__standart:after {
+    content: 'standart';
+
+}
+
+.price__card__exclusive:after {
+    content: 'exclusive';
+}
+
+
+
+
+.price__card__amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: $green;
+    text-align: center;
+    vertical-align: middle;
+
+    padding-top: 2rem;
+    
+
+}
+
+
+.price__card__time {
+    text-align: center;
+
+    font-size: 1.3rem;
+    color: $gray;
+
+}
+
+
+
+.price__cards {
+    padding-bottom: 7rem;
+}
+
+
+.price__card__list ul{
+    list-style: none;
+    color: $gray;
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.price__card__list ul li {
+    padding-bottom: .3rem;
+}

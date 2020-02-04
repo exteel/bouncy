@@ -1,0 +1,108 @@
+.form--section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0;
+  flex-wrap: wrap;
+
+  margin: 0 2rem;
+
+}
+
+.contact__form {
+  display: grid;
+
+  grid-gap: 10px;
+  grid-template-columns: [start] 145px [line-1] 145px [line-2] 145px [line-3] 145px [line-4] 145px [line-5] 145px [end];
+  grid-template-rows: [top] 40px [line-1] 40px [line-2] 40px [line-3] 40px [line-4] 40px [line-5] 40px [bottom];
+
+  @media (max-width: $screen-md-max) {
+    grid-template-columns: [start] 100px [line-1] 100px [line-2] 100px [line-3] 100px [line-4] 100px [line-5] 100px [end];
+  
+  }
+
+  @media (max-width: $screen-sm-max) {
+    grid-template-columns: [start] 80px [line-1] 80px [line-2] 80px [line-3] 80px [line-4] 80px [line-5] 80px [end];
+  
+  }
+  @media (max-width: $screen-xs-max) {
+    grid-template-columns: [start] 60px [line-1] 60px [line-2] 60px [line-3] 60px [line-4] 60px [line-5] 60px [end];
+  
+  }
+
+
+}
+
+.contact__form__item--name {
+  grid-column: start / line-2;
+  grid-row: top / line-1;
+
+ 
+}
+
+.contact__form__item--mail {
+  grid-column: line-2 / line-4;
+  grid-row: top / line-1;
+
+  
+}
+
+.contact__form__item--subject {
+  grid-column: line-4 / end;
+  grid-row: top / line-1;
+
+ 
+}
+
+.contact__form__item--main {
+  grid-column: start / end;
+  grid-row: line-1 / line-5;
+
+ 
+}
+
+.contact__form__item--button {
+  grid-column: start / end;
+  grid-row: line-5 / bottom;
+  text-align: center;
+  background: $green;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem;
+
+  
+}
+
+.contact__form__item {
+  border: 1px solid #d8dce0;
+
+  & > input {
+    border: none;
+    background: transparent;
+    padding: 0.5rem;
+    max-width: 100%;
+    height: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.textarea {
+  border: 0;
+  outline: none;
+  padding: 0.5rem;
+
+  &:hover,
+  :active,
+  :focus {
+    outline: none;
+  }
+}
+textarea {
+  max-width: 100%;
+  max-height: 100%;
+  resize: none;
+}

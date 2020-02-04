@@ -1,0 +1,65 @@
+@import "vars";
+
+/* Default styles */
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+
+  @media (max-width: 650px) {
+        overflow: hidden;
+        overflow-y: scroll;
+  }
+}
+
+body {
+  margin: 0;
+
+  background-color: $white;
+  font-family: "Open Sans", sans-serif,;
+  font-weight: 400;
+  color: $black;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Bootstrap */
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/modal";
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/nav";
+@import "blocks/first";
+@import "blocks/infobox";
+@import "blocks/fscreen-slider";
+@import "blocks/arrow-down";
+@import "blocks/second";
+@import "blocks/btn";
+@import "blocks/about__infoblock";
+@import "blocks/third";
+@import "blocks/ico";
+@import "blocks/span";
+@import "blocks/our__services";
+@import "blocks/radial__progress";
+@import "blocks/team__quotes";
+@import "blocks/portfolio";
+@import "blocks/team";
+@import "blocks/team_sta";
+@import "blocks/blog";
+@import "blocks/our__price";
+@import "blocks/subscribe__us";
+@import "blocks/contact__us";
+@import "blocks/form";
+@import "blocks/map";
+@import "blocks/footer";

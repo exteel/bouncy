@@ -1,0 +1,34 @@
+.map {
+  position: relative;
+  text-align: center;
+  color: $white;
+  top: 50%;
+
+  &:hover {
+    transition: 2s;
+  }
+}
+
+.map>iframe {
+  height: 70vh;
+  width: 100%;
+}
+
+.map:after {
+  position: absolute;
+  left: 0;
+  content: "find us on the map";
+  text-transform: uppercase;
+  padding-top: 17%;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.map:hover {
+  &:after {
+    display: none;
+  }
+}
